@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="FirefoxTest(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="TestAmazon.TestHomepageElements">
+        <methods>
+          <include name="testbrowsinghistory"/>
+          <include name="testbaby"/>
+          <include name="openbrowser"/>
+          <include name="testpetsupplies"/>
+          <include name="signin"/>
+          <include name="testgiftcards"/>
+          <include name="clearobject"/>
+          <include name="closebrowser"/>
+          <include name="testbuyagain"/>
+          <include name="signout"/>
+          <include name="createobject"/>
+        </methods>
+      </class> <!-- TestAmazon.TestHomepageElements -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test thread-count="2" parallel="tests" name="ChromeTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="TestAmazon.TestHomepageElements">
+        <methods>
+          <include name="testbrowsinghistory"/>
+          <include name="testbaby"/>
+          <include name="openbrowser"/>
+          <include name="testpetsupplies"/>
+          <include name="signin"/>
+          <include name="testgiftcards"/>
+          <include name="clearobject"/>
+          <include name="closebrowser"/>
+          <include name="testbuyagain"/>
+          <include name="signout"/>
+          <include name="createobject"/>
+        </methods>
+      </class> <!-- TestAmazon.TestHomepageElements -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
